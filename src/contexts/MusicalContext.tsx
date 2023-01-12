@@ -10,6 +10,7 @@ interface MusicalContext {
   bemolMode: boolean
   setBemolMode: (bemolMode: boolean) => void
   CHROMATIC_SCALE: Note[]
+  LETTERS_CHROMATIC_SCALE: Note[]
 }
 
 interface MusicalProviderProps {
@@ -36,11 +37,31 @@ export const MusicalProvider: React.FC<MusicalProviderProps> = ({
     { id: 11, sharpMode: 'Si', bemolMode: 'Si' }
   ]
 
+  const LETTERS_CHROMATIC_SCALE: Note[] = [
+    { id: 0, sharpMode: 'C', bemolMode: 'C' },
+    { id: 1, sharpMode: 'C♯', bemolMode: 'D♭ ' },
+    { id: 2, sharpMode: 'D', bemolMode: 'D' },
+    { id: 3, sharpMode: 'D♯', bemolMode: 'E♭' },
+    { id: 4, sharpMode: 'E', bemolMode: 'E' },
+    { id: 5, sharpMode: 'F', bemolMode: 'F' },
+    { id: 6, sharpMode: 'F♯', bemolMode: 'G♭' },
+    { id: 7, sharpMode: 'G', bemolMode: 'G' },
+    { id: 8, sharpMode: 'G♯', bemolMode: 'A♭' },
+    { id: 9, sharpMode: 'A', bemolMode: 'A' },
+    { id: 10, sharpMode: 'A♯', bemolMode: 'B♭' },
+    { id: 11, sharpMode: 'B', bemolMode: 'B' }
+  ]
+
   const [bemolMode, setBemolMode] = useState<boolean>(false)
 
   return (
     <MusicalContext.Provider
-      value={{ bemolMode, setBemolMode, CHROMATIC_SCALE }}
+      value={{
+        bemolMode,
+        setBemolMode,
+        CHROMATIC_SCALE,
+        LETTERS_CHROMATIC_SCALE
+      }}
     >
       {children}
     </MusicalContext.Provider>
