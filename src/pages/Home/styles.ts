@@ -40,6 +40,11 @@ export const MusicalSection = styled.section`
   width: 100%;
   display: flex;
 
+  &:nth-child(2) {
+    flex-direction: row-reverse;
+    background-color: ${({ theme }) => theme.colors.secondary[100]};
+  }
+
   @media (max-width: 769px) {
     flex-direction: column;
     gap: 32px;
@@ -47,13 +52,15 @@ export const MusicalSection = styled.section`
 
   align-items: center;
   justify-content: center;
-  padding: 48px 24px;
+  padding: 64px 24px;
 
   img {
     width: 200px;
+    height: 200px;
 
     @media (max-width: 769px) {
       width: 160px;
+      height: 160px;
     }
   }
 
@@ -75,6 +82,10 @@ export const MusicalSection = styled.section`
     h2 {
       font-size: 28px;
       color: ${({ theme }) => theme.colors.primary[500]};
+    }
+
+    p {
+      text-align: justify;
     }
   }
 `

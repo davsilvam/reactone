@@ -2,6 +2,7 @@ import React from 'react'
 
 import { Header } from '../../components/Header'
 import composition from '../../assets/composition.svg'
+import chord from '../../assets/chord.svg'
 
 import {
   ArrowLeft,
@@ -43,6 +44,24 @@ export const Home: React.FC = () => {
             </p>
             <LinkButton to="/scales">
               Ir para Escalas <ArrowLeft />
+            </LinkButton>
+          </div>
+        </MusicalSection>
+        <MusicalSection>
+          <ImageWrapper>
+            <div>
+              <img src={chord} alt="Man with a guitar illustration." />
+            </div>
+          </ImageWrapper>
+          <div>
+            <h2>Acordes</h2>
+            <p>
+              Como formar os famosos acordes? Sem problemas, aqui você
+              conseguirá formar acordes bem elaborados, podendo adicionar
+              sétimas, nonas e outras. A escolha é sua!
+            </p>
+            <LinkButton to="/scales/chords">
+              Ir para Acordes <ArrowLeft />
             </LinkButton>
           </div>
         </MusicalSection>
