@@ -14,6 +14,11 @@ export const Container = styled.header`
 
   ul {
     display: flex;
+
+    @media (max-width: 545px) {
+      display: none;
+    }
+
     align-items: center;
     gap: 32px;
   }

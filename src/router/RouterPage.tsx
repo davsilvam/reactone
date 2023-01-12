@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { MusicalProvider } from '../contexts/MusicalContext'
+import { Chords } from '../pages/Chords'
 import { Home } from '../pages/Home'
 import { Scales } from '../pages/Scales'
 import { Diatonic } from '../pages/Scales/subpages/Diatonic'
@@ -14,6 +15,7 @@ export const RouterPage: React.FC = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/scales" element={<Scales />} />
+          <Route path="/chords" element={<Chords />} />
 
           <Route path="/scales/diatonic" element={<Diatonic />} />
           <Route path="/scales/harmonic" element={<Harmonic />} />

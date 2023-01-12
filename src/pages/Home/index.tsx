@@ -57,10 +57,10 @@ export const Home: React.FC = () => {
             <h2>Acordes</h2>
             <p>
               Como formar os famosos acordes? Sem problemas, aqui você
-              conseguirá formar acordes bem elaborados, podendo adicionar
-              sétimas, nonas e outras. A escolha é sua!
+              conseguirá formar acordes bem elaborados, podendo consultar os
+              acordes com sétimas, nonas e outras variações. A escolha é sua!
             </p>
-            <LinkButton to="/scales/chords">
+            <LinkButton to="/chords">
               Ir para Acordes <ArrowLeft />
             </LinkButton>
           </div>

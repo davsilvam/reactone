@@ -93,6 +93,7 @@ export const Harmonic: React.FC = () => {
         </ToneInfoContainer>
 
         <TonesContainer
+          scale={CHROMATIC_SCALE}
           bemolMode={bemolMode}
           changeIdentityNote={handleIdentityNoteChange}
         />
