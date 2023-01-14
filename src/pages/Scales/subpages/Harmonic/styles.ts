@@ -69,6 +69,10 @@ export const SwitchWrapper = styled.span`
   align-items: center;
   justify-content: center;
   gap: 12px;
+
+  p {
+    font-size: 14px;
+  }
 `
 
 export const ScaleContainer = styled.div`

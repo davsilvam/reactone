@@ -5,8 +5,8 @@ export const SwitchRoot = styled(Root)`
   all: unset;
   cursor: pointer;
   position: relative;
-  width: 42px;
-  height: 21px;
+  width: 36px;
+  height: 18px;
   opacity: 50%;
   border-radius: 9999px;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
@@ -19,8 +19,8 @@ export const SwitchRoot = styled(Root)`
 
 export const SwitchThumb = styled(Thumb)`
   display: block;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   background-color: white;
   border-radius: 9999px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
@@ -30,6 +30,6 @@ export const SwitchThumb = styled(Thumb)`
   will-change: transform;
 
   &[data-state='checked'] {
-    transform: translateX(21px);
+    transform: translateX(18px);
   }
 `
