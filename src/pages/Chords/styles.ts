@@ -46,7 +46,7 @@ export const Container = styled.div`
     padding: 0 32px;
     margin-bottom: 24px;
 
-    div {
+    > div {
       max-width: 50%;
 
       @media (max-width: 769px) {
@@ -88,11 +88,28 @@ export const Container = styled.div`
   }
 `
 
+export const SwitchContainer = styled.section`
+  @media (max-width: 769px) {
+    width: 100%;
+    align-items: flex-end;
+  }
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 8px;
+`
+
 export const SwitchWrapper = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 12px;
+
+  p {
+    font-size: 14px;
+  }
 `
 
 export const ScaleContainer = styled.div`
