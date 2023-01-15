@@ -43,6 +43,11 @@ export const MusicalSection = styled.section`
   &:nth-child(2) {
     flex-direction: row-reverse;
     background-color: ${({ theme }) => theme.colors.secondary[100]};
+
+    @media (max-width: 769px) {
+      flex-direction: column;
+      gap: 32px;
+    }
   }
 
   @media (max-width: 769px) {
