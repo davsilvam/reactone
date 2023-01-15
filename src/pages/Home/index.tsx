@@ -3,6 +3,7 @@ import React from 'react'
 import { Header } from '../../components/Header'
 import composition from '../../assets/composition.svg'
 import chord from '../../assets/chord.svg'
+import transpose from '../../assets/transpose.svg'
 
 import {
   ArrowLeft,
@@ -35,7 +36,7 @@ export const Home: React.FC = () => {
             </div>
           </ImageWrapper>
           <div>
-            <h2>Escalas</h2>
+            <h2>Construção de Escalas</h2>
             <p>
               Dificuldade com escalas? Seus problemas acabaram! Consulte a seção
               de escalas e consiga a ideal para suas composições. Escolha entre
@@ -47,6 +48,7 @@ export const Home: React.FC = () => {
             </LinkButton>
           </div>
         </MusicalSection>
+
         <MusicalSection>
           <ImageWrapper>
             <div>
@@ -54,7 +56,7 @@ export const Home: React.FC = () => {
             </div>
           </ImageWrapper>
           <div>
-            <h2>Acordes</h2>
+            <h2>Montar Acordes</h2>
             <p>
               Como formar os famosos acordes? Sem problemas, aqui você
               conseguirá formar acordes bem elaborados, podendo consultar os
@@ -62,6 +64,25 @@ export const Home: React.FC = () => {
             </p>
             <LinkButton to="/chords">
               Ir para Acordes <ArrowLeft />
+            </LinkButton>
+          </div>
+        </MusicalSection>
+
+        <MusicalSection>
+          <ImageWrapper>
+            <div>
+              <img src={transpose} alt="Man with a guitar illustration." />
+            </div>
+          </ImageWrapper>
+          <div>
+            <h2>Transposição de Instrumentos</h2>
+            <p>
+              Tentou tocar a mesma partitura em um instrumento diferente e são
+              soou legal? Você precisa transpor com base na afinação do
+              instrumento em questão. E nossa ferramenta faz isso para você!
+            </p>
+            <LinkButton to="/transpose">
+              Ir para Transpor <ArrowLeft />
             </LinkButton>
           </div>
         </MusicalSection>
